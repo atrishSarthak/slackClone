@@ -1,13 +1,13 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/src/components/ui/button";
 import {
     Card,
     CardContent,
     CardDescription,
     CardHeader,
     CardTitle
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input";
-import { Separator } from "@/components/ui/separator";
+} from "@/src/components/ui/card"
+import { Input } from "@/src/components/ui/input";
+import { Separator } from "@/src/components/ui/separator";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { SignInFlow } from "../types";

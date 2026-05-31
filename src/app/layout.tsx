@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Lexend_Deca } from "next/font/google";
+import { ConvexClientProvider } from "../components/convex-client-provider";
 import "./globals.css";
 
 const lexendDeca = Lexend_Deca({
@@ -23,7 +24,12 @@ export default function RootLayout({
       lang="en"
       className={`${lexendDeca.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <ConvexClientProvider> 
+          {children}
+        </ConvexClientProvider>
+        
+      </body>
     </html>
   );
 }
